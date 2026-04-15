@@ -1,0 +1,38 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in machine learning have revolutionized natural language processing, particularly through deep learning architectures such as transformer models and neural networks. These neural network-based approaches, especially attention mechanisms within transformers, have enabled significant improvements in machine translation, sentiment analysis, and text classification tasks. Furthermore, the intersection of natural language processing with computer vision has spawned multimodal learning systems that simultaneously process text and image data. Meanwhile, the broader field of artificial intelligence continues to grapple with challenges in explainability and interpretability of deep learning models, issues that are particularly acute when these neural network systems are deployed in high-stakes applications requiring transparency in machine learning decision-making processes."
+    },
+    "solution_criteria": [
+      "All distinct topics are identified without duplication (e.g., 'machine learning', 'natural language processing', 'deep learning', 'transformer models', 'neural networks', 'attention mechanisms', 'machine translation', 'sentiment analysis', 'text classification', 'multimodal learning', 'computer vision', 'explainability', 'interpretability')",
+      "Nested or overlapping concepts are separated into individual topics rather than combined",
+      "Output is a valid JSON array of strings"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing overlapping and nested topics to verify the prompt correctly identifies and separates distinct concepts without duplication"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in synthetic biology have enabled the development of engineered microorganisms that produce biofuels, offering significant economic advantages over traditional petroleum extraction. These organisms utilize metabolic pathways optimized through CRISPR gene editing to convert agricultural waste into ethanol and biodiesel with 40% greater efficiency than conventional fermentation. However, the regulatory framework governing genetically modified organisms remains fragmented across jurisdictions, creating market uncertainties that affect investment in biotech startups. Environmental economists argue that carbon pricing mechanisms could accelerate adoption by internalizing externalities, while conservation biologists express concerns about potential ecological impacts if engineered strains escape containment. Policy interventions in the European Union have demonstrated that subsidies combined with strict containment protocols can balance innovation incentives with biosafety requirements."
+    },
+    "solution_criteria": [
+      "Extracts topics from all major fields represented (biology, economics, policy, environmental science)",
+      "Captures both broad topics and specific technical/methodological concepts",
+      "Returns results as a JSON array of strings with no extraneous formatting"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with an interdisciplinary passage mixing topics from multiple fields (e.g., biology, economics, policy) to ensure the prompt captures cross-domain subjects accurately"
+  },
+  {
+    "prompt_inputs": {
+      "content": "This study investigates the efficacy of CRISPR-Cas9 gene editing in mitigating neurodegenerative pathology through targeted silencing of pathogenic tau aggregates in transgenic P301S models. We employed AAV-mediated delivery of sgRNA constructs to hippocampal neurons, achieving 73% reduction in phosphorylated tau (p-tau181) as measured by immunofluorescence and Western blotting. Transcriptomic analysis via RNA-seq revealed significant downregulation of neuroinflammatory markers including IL-6 and TNF-\u03b1, while synaptic density metrics quantified through electron microscopy demonstrated partial restoration of dendritic spine morphology. These findings suggest that epigenetic modulation via histone deacetylase inhibitors may synergistically enhance CRISPR efficacy, potentially offering therapeutic applications for Alzheimer's disease and frontotemporal dementia. Our results underscore the importance of off-target effect assessment and long-term biodistribution studies in preclinical CNS gene therapy protocols."
+    },
+    "solution_criteria": [
+      "Extracts both explicit topics (CRISPR-Cas9, gene editing, tau aggregates) and implicit topics (neuroinflammation, synaptic plasticity, preclinical therapeutics) relevant to the research domain",
+      "Correctly interprets domain-specific acronyms and jargon (CRISPR-Cas9, AAV, sgRNA, p-tau181, RNA-seq, CNS) as topic indicators without including unexpanded acronyms as separate topics",
+      "Returns results as a JSON array of strings with no additional fields or explanations"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a dense abstract containing implicit, domain-specific jargon and acronyms to assess whether the prompt extracts both explicit and implicit key topics while handling technical terminology appropriately"
+  }
+]

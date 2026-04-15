@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Extract all S3 bucket names from CloudFormation template output",
+    "format": "regex",
+    "solution_criteria": "Regex should correctly match S3 bucket names (lowercase letters, numbers, hyphens, 3-63 characters) and not match invalid bucket names or other resource names"
+  },
+  {
+    "task": "Parse an AWS IAM policy JSON and extract all allowed actions",
+    "format": "python",
+    "solution_criteria": "Function should handle nested Statement arrays, multiple Effect types, and return a deduplicated list of all actions granted with Effect=Allow"
+  },
+  {
+    "task": "Generate a valid AWS Lambda environment variables JSON object with encrypted database credentials",
+    "format": "json",
+    "solution_criteria": "JSON should include properly formatted key-value pairs with valid environment variable names (alphanumeric and underscore only), reference to KMS encryption, and at least 3 database-related variables"
+  }
+]

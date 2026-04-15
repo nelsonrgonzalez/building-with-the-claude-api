@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "72 kg",
+      "goal": "Marathon race day carb-loading and sustained endurance energy",
+      "restrictions": "Vegetarian, no dairy"
+    },
+    "solution_criteria": [
+      "Meal plan covers all meals for one full day (breakfast, lunch, dinner, snacks)",
+      "Emphasizes carbohydrate-rich foods appropriate for endurance performance",
+      "Respects vegetarian and dairy-free dietary restrictions",
+      "Plan is compact and concise (minimal elaboration)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a specific sport discipline and performance goal - create a 1-day meal plan for a marathon runner focusing on carb-loading and endurance performance"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "82",
+      "goal": "High-intensity CrossFit training with muscle maintenance",
+      "restrictions": "Vegan, nut allergies, maximum 15 minutes prep time per meal"
+    },
+    "solution_criteria": [
+      "Meal plan includes exactly 3 meals that are vegan and nut-free",
+      "Each meal requires 15 minutes or less to prepare",
+      "Total daily calories and protein are appropriate for an 82kg athlete doing CrossFit",
+      "Plan is presented in a compact, easy-to-read format for one day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with dietary restrictions and preferences - generate a meal plan for a vegan CrossFit athlete with nut allergies and limited cooking time"
+  },
+  {
+    "prompt_inputs": {
+      "height": "183 cm",
+      "weight": "78 kg",
+      "goal": "Active recovery nutrition with 55% carbs, 25% protein, 20% fat to support muscle repair and glycogen replenishment",
+      "restrictions": "Vegetarian, no dairy"
+    },
+    "solution_criteria": [
+      "Meal plan covers a full day with breakfast, lunch, dinner, and 1-2 snacks",
+      "Macronutrient distribution aligns with specified goals (55% carbs, 25% protein, 20% fat)",
+      "All meals comply with vegetarian and dairy-free restrictions",
+      "Plan is concise and practical for a professional athlete on active recovery day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with recovery-focused nutrition - design a meal plan for a professional soccer player on an active recovery day with specific macronutrient targets"
+  }
+]
